@@ -1,12 +1,13 @@
 // Split string into array by the first occurrence of separator
+// Step 1 change name 
 
-SectionString = (s, t) => {
-  i = s.indexOf(t);
-  if (i < 0 || t == '') {
-    return [s, ''];
+sectionString  = (str, separator) => {
+  i = str.indexOf(separator);
+  if (i < 0 || separator == '') {
+    return [str, ''];
   } else {
-    return [s.slice(0, i), s.slice(i + t.length)];
+    return [str.slice(0, i), str.slice(i + separator.length)];
   }
 };
 
-module.exports = SectionString;
+module.exports = sectionString ;
