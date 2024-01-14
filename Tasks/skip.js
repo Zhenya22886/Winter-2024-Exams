@@ -1,16 +1,17 @@
 // Return an remove without listed values
+// Step 1 change name
 
-Skip = (T, ...Remove) => {
-  x = 0;
-  for (C of T) {
-    for (X of Remove) {
-      if (C === X) {
-        T.splice(x, 1);
+skip = (array, ...elementsToRemove) => {
+  index = 0;
+  for (value of array) {
+    for (elementsToRemove of elementsToRemove) {
+      if (value === elementsToRemove) {
+        array.splice(index, 1);
       }
     }
-    x++;
+    index++;
   }
-  return T;
+  return array;
 };
 
-module.exports = Skip;
+module.exports = skip;
