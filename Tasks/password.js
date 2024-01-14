@@ -1,11 +1,12 @@
 // Generate random passwor
-// Step 1 change name
+// Step 1 change name\
+// Step 2 added const and let
 
-let generatePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length) => {
   const alphabetLength  = alphabet.length;
-  password  = '';
+  let password  = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * alphabetLength );
+   const Index = Math.floor(Math.random() * alphabetLength );
     password  = password  + alphabet[Index];
   }
   return password ;
