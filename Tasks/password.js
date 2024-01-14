@@ -1,13 +1,14 @@
-// Generate random password
+// Generate random passwor
+// Step 1 change name
 
-let GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
-  key = '';
+let generatePassword = (alphabet, length) => {
+  const alphabetLength  = alphabet.length;
+  password  = '';
   for (let i = 0; i < length; i++) {
-    Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    Index = Math.floor(Math.random() * alphabetLength );
+    password  = password  + alphabet[Index];
   }
-  return key;
+  return password ;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
