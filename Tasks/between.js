@@ -1,13 +1,16 @@
 // Extract substring between prefix and suffix
 // Step 1 change name
+// Step 2 added const, let and use strict
 
-getValuebetween  = (fullString, prefix, suffix) => {
-  index  = fullString.indexOf(prefix);
+'use strict'
+
+const getValuebetween  = (fullString, prefix, suffix) => {
+ const index  = fullString.indexOf(prefix);
   if (index  === -1) return '';
   else {
-    prefixLength  = index  + prefix.length;
+   let prefixLength  = index  + prefix.length;
     fullString = fullString.substring(prefixLength );
-    if (s) {
+    if (suffix) {
       index  = fullString.indexOf(suffix);
       if (index  === -1) {
         return '';
