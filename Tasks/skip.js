@@ -1,21 +1,20 @@
 // Return an remove without listed values
 // Step 1 change name
 //Step 2 added const, array and use strict
+// Step 3 Improved readability
 
 'use strict'
 
 const skip = (array, ...elementsToRemove) => {
- const index = 0;
-   const result = [];
-  for (const value of array) {
-    for (const elementsToRemove of elementsToRemove) {
-      if (value === elementsToRemove) {
-        array.splice(index, 1);
-      }
+ const result = [];
+
+    for (const value of array) {
+        if (!elementsToRemove.includes(value)) {
+            result.push(value);
+        }
     }
-    index++;
-  }
-  return array;
+   
+    return result;
 };
 
 module.exports = skip;
