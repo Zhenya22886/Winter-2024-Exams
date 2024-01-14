@@ -1,7 +1,8 @@
 // Return an array without duplicates
 // Step 1 change name
+// Step 2 added const
 
-noDuplicatesArray  = (value, size) => {
+const noDuplicatesArray  = (value, size) => {
   if (size <= 0) return [];
   else {
     res = [];
