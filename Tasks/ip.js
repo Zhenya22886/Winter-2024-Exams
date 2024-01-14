@@ -1,19 +1,20 @@
 // Split string by the first occurrence of separator
+// Step 1 change name 
 
-Parseip = (i) => {
-  a = [];
-  if (i === '') return;
+parseIP  = (ipString ) => {
+  ipArray  = [];
+  if (ipString  === '') return;
   else {
-    B = i.split('.');
-    if (B.length != 4) return;
+    arrOfIpElements  = ipString.split('.');
+    if (arrOfIpElements.length != 4) return;
     j = 0;
-    for (const b of B) {
-      a[j] = parseInt(b);
-      if (isNaN(a[j])) return;
+    for (const ipElement  of arrOfIpElements ) {
+      ipArray [j] = parseInt(ipElement );
+      if (isNaN(ipArray [j])) return;
       j++;
     }
   }
-  return a;
+  return ipArray ;
 };
 
-module.exports = Parseip;
+module.exports = parseIP ;
