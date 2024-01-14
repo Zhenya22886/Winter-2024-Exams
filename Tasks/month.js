@@ -1,6 +1,7 @@
 // Get month number
+// Step 1 change name 
 
-Months = [
+months  = [
   'jan',
   'feb',
   'mar',
@@ -15,12 +16,12 @@ Months = [
   'dec',
 ];
 
-Month = (s) => {
+Month = (requiredMonth) => {
   l = Months.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (requiredMonth.toLowerCase().startsWith(months[i])) return i + 1;
   }
   return -1;
 };
 
-module.exports = Month;
+module.exports = months ;
