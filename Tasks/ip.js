@@ -5,7 +5,7 @@
 
 'use strict';
 
-const vparseIP  = (ipString ) => {
+const parseIP  = (ipString ) => {
  const ipArray  = [];
  
  
