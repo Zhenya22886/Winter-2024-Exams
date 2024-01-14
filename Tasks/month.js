@@ -30,4 +30,4 @@ const Month = (requiredMonth) => {
   return -1;
 };
 
-module.exports = months ;
+module.exports = Month;
