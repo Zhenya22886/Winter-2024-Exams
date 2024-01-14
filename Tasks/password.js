@@ -10,11 +10,11 @@ const generatePassword = (alphabet, length) => {
   let password  = '';
   
   for (let i = 0; i < length; i++) {
-   const index = Math.floor(Math.random() * alphabetLength );
+   const index = Math.random() * alphabetLength;
+   const flooredIndex  = Math.floor(index);
     
-    password  += alphabet[Index];
+    password  += alphabet[flooredIndex];
   }
-  
   return password ;
 };
 
